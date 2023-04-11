@@ -1,0 +1,139 @@
+.contenedor{
+    grid-template : 
+            'header'
+            'nav'
+            'main'
+            'aside'
+            'footer';
+} 
+
+html{
+    height: 100% ;
+}
+
+body{
+    background-image: url(imagenes/r.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+h1{
+
+font-family: 'Cooper Black', cursive;
+color:rgb(21, 208, 233);
+margin-left: 10px;
+font-size: 60px;
+text-align: center; 
+text-shadow: white 8px 8px 3px;
+
+
+}
+
+h2{
+font-family: 'harrington', cursive;;
+color: white;
+font-size: 35px;
+text-align: center; 
+}
+
+h3{
+font-family: 'harrington', cursive;;
+color: rgb(8, 8, 8);
+font-size: 30px;
+text-align: center; 
+}
+
+header{
+    grid-area: header;
+	width: 1490px;
+	height: 120 px;
+	background: rgba(255, 255, 255, 10,70);
+}
+
+nav{
+grid-area: nav;
+width: 1350px;
+height: 50px;
+background: rgb(62, 25, 165);
+border-radius: 10px;
+display: flex;
+justify-content: center;
+}
+
+li{
+	
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+	background: #DEB887;
+	margin: 3px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px white inset; 
+	font-family: 'Broadway', cursive;;
+
+
+}
+
+main{
+    grid-area: main;
+	width: 1100px;
+	background: transparent;
+	border: solid;
+	border-color:orange;
+	height: 700px;
+	float: left;
+	margin-top: 20px;
+	border-radius: 10px;
+background: rgba(0,0,0,0.6);
+	
+}
+aside{
+    width: 200px;
+	background: transparent;
+	border: solid;
+	border-color:orange;
+	height: 700px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.6);
+}
+
+footer{
+
+    grid-area: footer;
+width: 1350px;
+height: 70px;
+background: rgb(12, 228, 181);
+float: left;
+margin-top: 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+p{
+    margin-left: 38px;
+	font-size: 25px;
+	font-weight: bolder;
+	line-height: 30px;
+	padding: 10px;
+	text-align: justify;
+	border-color:orange;
+	font-family: 'Agency FB', cursive;
+	color: white;
+}
+
+p1{
+    margin-left: 38px;
+	font-size: 20px;
+	font-weight: bolder;
+	line-height: 150px;
+	padding: 10px;
+	text-align: justify;
+	border-color:orange;
+	font-family: 'Agency FB', cursive;
+	color: white;
+}
