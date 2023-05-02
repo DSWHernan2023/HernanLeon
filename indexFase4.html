@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuestionario</title>
+</head>
+
+
+<style>
+
+#contenidos{
+	width: 1000px;
+	height: auto;
+	margin: auto;
+	position: relative;
+
+
+}
+
+div {
+
+font-family: 'Trebuchet MS';
+font-size: 20px;
+
+}
+
+body{
+background-image: url(imagenes/r.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+h1{
+font-family: 'Cooper Black', cursive;
+color:rgb(39, 164, 180);
+margin-left: 10px;
+font-size: 60px;
+text-align: center; 
+text-shadow: rgb(223, 167, 167) 8px 8px 3px;
+
+}
+
+h2{
+font-family: 'balsamic sans', cursive;
+color: rgb(36, 13, 138);
+font-size: 35px;
+text-align: center; 
+
+}
+
+h3{
+font-family: 'balsamic sans', cursive;
+color: rgb(38, 10, 158);
+font-size: 20px;
+text-align: center; 
+
+}
+
+
+p{
+
+font-size: 30px;
+font-weight: bolder;
+line-height: 29px;
+padding: 10px;
+text-align: center;
+font-family: 'balsamic sans', cursive;
+color: rgb(8, 0, 0);
+}
+
+
+footer{
+width: 1335px;
+height: 90px;
+background: rgb(12, 228, 181);
+float: left;
+margin-top: 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+
+}
+
+*{ box-sizing: border-box;
+	font-family: 'balsamic sans';
+}
+
+header{
+text-align: center;
+background: transparent;
+border: solid;
+background: rgba(0,0,0,0.6);
+color: #fff;
+padding: 10px  0; 
+border-color:rgb(86, 25, 184);
+margin-left: 8px;
+margin-top: 20px;
+border-radius: 10px;
+}
+
+.container{
+max-width: 700px;
+margin: auto;
+padding: 20px;
+
+}
+
+section{
+border: 2px  solid #5624d0;
+border-radius: 7px;
+padding: 10px;
+margin: 10px 0; 
+}
+
+label{
+display: block;
+padding: 7px;
+border-radius: 7px;
+cursor: pointer;
+border: 1px dashed #ccc;
+margin-bottom: 3px;
+}
+
+label :hover{
+background: #cec0fc;
+}
+
+button{
+width: 80%;
+display: block;
+margin: auto;
+padding: 10px;
+
+background-color: #76d7c8;
+border: none;
+cursor: pointer;
+border-radius: 20px;
+}
+
+button:hover{
+	background: #000;
+	color: #fff;
+}
+
+#resultado{
+font-size: 30px;
+color: darkred;
+}
+
+</style>
+
+<body>
+<header>
+    <h1>CUESTIONARIO</h1>
+    <p> selectores CSS </p>
+	<div style="text-align: center;">
+		
+
+		<img src="imagenes/11.gif" alt="box_model" width="280" height="180" hspace="100" /> 
+	</div>
+</header>
+   
+<div class="container"> 
+<section id="p0">
+<h2> 1- ¿Los elementos a los que dirige un selector CSS son llamados? </h2>
+<label>
+<input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> sujetos del selector
+</label>
+<label>
+<input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> pseudo-estado
+</label>
+<label>
+<input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> clase
+</label>
+<label>
+<input type="radio" value="4" name="p0" onclick="respuesta(0,this)"> atributo
+</label>
+</section>
+<section id="p1">
+<h2> 2- ¿Que es un selector CSS? </h2>
+<label>
+<input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> es un selector universal 
+<label>
+<input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> son cajas de texto
+</label>
+<label>
+<input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> herramienta para definir estilo de elementos css
+</label>
+<label>
+<input type="radio" value="4" name="p1" onclick="respuesta(1,this)"> es un elemnto html5
+</label>
+</section>
+<section id="p2">
+<h2> 3- ¿cuales son los tipos de selectores CSS? </h2>
+<label>
+<input type="radio" value="1" name="p2" onclick="respuesta(2,this)">  herramienta para definir estilo de elementos css
+</label>
+<label>
+<input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> son cajas de texto
+</label>
+<label>
+<input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> es un selector universal
+</label>
+<label>
+<input type="radio" value="4" name="p2" onclick="respuesta(2,this)"> universal, de etiqueta, id y clase y de atributo
+</label>
+</section>
+<section id="p3">
+<h2> 4- ¿identifica el selector de tipo clase? </h2>
+<label>
+<input type="radio" value="1" name="p3" onclick="respuesta(3,this)">  #menu{color:blue;}
+</label>
+<label>
+<input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> .menu{color:black;} 
+</label>
+<label>
+<input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> /menu{color:green;}
+</label>
+<label>
+<input type="radio" value="4" name="p3" onclick="respuesta(3,this)"> *menu{color:red;}
+</label>
+</section>
+<section id="p4">
+<h2> 5- ¿identifica el selector de tipo etiqueta? </h2>
+<label>
+<input type="radio" value="1" name="p4" onclick="respuesta(4,this)">  #h{font:times new roman;}
+</label>
+<label>
+<input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> .h{font:times new roman;}
+</label>
+<label>
+<input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> /h{font:times new roman;}
+</label>
+<label>
+<input type="radio" value="4" name="p4" onclick="respuesta(4,this)"> h{font:times new roman;}
+</label>
+</section>
+
+<button onclick="enviar()"> ENVIAR </button>
+<h2>Cantidad acertadas: <span id="resultado"></span></h2>
+</div>
+<script src="script.js"></script>
+
+<h3>
+    PAGINAS DE INTERES
+</h3>
+<a href="https://web.whatsapp.com/"><img src= "imagenes/whatsapp.png" alt="whatsapp" width="80" height="80" hspace="620"></a><br>
+<a href="http://www.facebook.com"><img src= "imagenes/facebook.png" alt="facebook" width="80" height="80" hspace="620"></a><br>
+<a href="http://www.twitter.com"><img src= "imagenes/twitter.png" alt="twitter" width="80" height="80" hspace="620"></a><br>
+
+
+<div class="today-date "></div>
+<div style="border-bottom: 3px solid greenyellow;"  class="line"></div>
+<div style="text-align: center;" class="date">Domingo 23 de Abril de 2023</div>
+<div style="border-bottom: 3px solid greenyellow;" class="line"></div>
+
+   
+   <footer><h2>Copyright Todos los Derechos Reservados 2023.</h2></footer>
+</div>
+</body>
+</html>
